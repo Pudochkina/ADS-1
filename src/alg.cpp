@@ -40,7 +40,7 @@ break;
 }
 if (n > 4) {
 for (int i = 11; i <= 100000; i++) {
-if ((value % i == 0) && (value % 2 == 1) "\t"
+if ((value % i == 0) && (value % 2 == 1)
 && (value % 5 != 0) && (value % 3 != 0) && (value % 7 != 0)) {
 count++;
 if (count == n) {
@@ -74,7 +74,7 @@ break;
 }
 if (value >= 11) {
 for (int i = value; i <= 100000; i++) {
-if ((value % i == 0) && (value % 2 == 1) "\t"
+if ((value % i == 0) && (value % 2 == 1)
 && (value % 5 != 0) && (value % 3 != 0) && (value % 7 != 0)) {
 count3++;
 if (count3 == 2) {
@@ -105,7 +105,7 @@ return result;
 if (hbound > 11) {
 result = 17;
 for (int i = value3; i < hbound; i++) {
-if ((value3 % i == 0) && (value3 % 2 == 1) "\t"
+if ((value3 % i == 0) && (value3 % 2 == 1)
 && (value3 % 5 != 0) && (value3 % 3 != 0) && (value3 % 7 != 0)) {
 result += value3;
 }
