@@ -5,7 +5,7 @@
 
 bool checkPrime(uint64_t value) {
 int count = 0;
-for (int i = 2; i <= 100000; i++) {
+for (int i = 2; i <= 10000000; i++) {
 if (value % i == 0) {
 count++;
 }
@@ -36,7 +36,7 @@ result2 = 7;
 break;
 }
 if (n > 4) {
-for (int i = 11; i <= 100000; i++) {
+for (int i = 11; i <= 10000000; i++) {
 if ((value2 % i == 0) && (value2 % 2 == 1)
 && (value2 % 5 != 0) && (value2 % 3 != 0) && (value2 % 7 != 0)) {
 count2++;
@@ -68,7 +68,7 @@ result3 = 11;
 break;
 }
 if (value >= 11) {
-for (int i = value; i <= 100000; i++) {
+for (int i = value; i <= 10000000; i++) {
 if ((value % i == 0) && (value % 2 == 1)
 && (value % 5 != 0) && (value % 3 != 0) && (value % 7 != 0)) {
 count3++;
