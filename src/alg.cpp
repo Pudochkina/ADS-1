@@ -20,6 +20,7 @@ return false;
 uint64_t nPrime(uint64_t n) {
 int value = 11;
 int count = 0;
+int result = 0;
 switch (n) {
 case (1):
 value = 2;
@@ -44,16 +45,18 @@ if ((value % i == 0) && (value % 2 == 1)
 && (value % 5 != 0) && (value % 3 != 0) && (value % 7 != 0)) {
 count++;
 if (count == n) {
-return value;
+result = value;
 }
 }
 value++;
 }
 }
+return result;
 }
 
 uint64_t nextPrime(uint64_t value) {
 int count3 = 0;
+int result = 0;
 switch (value) {
 case (2):
 value = 3;
@@ -78,39 +81,42 @@ if ((value % i == 0) && (value % 2 == 1)
 && (value % 5 != 0) && (value % 3 != 0) && (value % 7 != 0)) {
 count3++;
 if (count3 == 2) {
-return value;
+result = value;
 }
 }
 value++;
 }
 }
+return result;
 }
 
 uint64_t sumPrime(uint64_t hbound) {
+int sum = 0;
 int result = 0;
 int value3 = 11;
 if (hbound <= 11 && hbound >= 7) {
-result = 17;
-return result;
+sum = 17;
+return sum;
 } else if (hbound >= 5 && hbound <= 7) {
-result = 10;
-return result;
+sum = 10;
+return sum;
 } else if (hbound >= 3 && hbound <= 5) {
-result = 5;
-return result;
+sum = 5;
+return sum;
 } else if (hbound <= 3)  {
-result = 2;
-return result;
+sum = 2;
+return sum;
 }
 if (hbound > 11) {
-result = 17;
+sum = 17;
 for (int i = value3; i < hbound; i++) {
 if ((value3 % i == 0) && (value3 % 2 == 1)
 && (value3 % 5 != 0) && (value3 % 3 != 0) && (value3 % 7 != 0)) {
-result += value3;
+sum += value3;
 }
 value3++;
 }
-return result;
+result = sum;
 }
+return result;
 }
