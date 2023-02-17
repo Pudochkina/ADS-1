@@ -92,7 +92,7 @@ int value3 = 11;
 if (hbound <= 11 && hbound >= 7) {
 result = 17;
 return result;
-} else if (hbound >= 5 && hbound <= 7) { 
+} else if (hbound >= 5 && hbound <= 7) {
 result = 10;
 return result;
 } else if (hbound >= 3 && hbound <= 5) {
