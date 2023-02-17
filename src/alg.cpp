@@ -107,8 +107,8 @@ return result;
 if (hbound > 11) {
 result = 17;
 for (int i = value3; i < hbound; i++) {
-if ((value3 % i == 0) && (value3 % 2 == 1)
-    && (value3 % 5 != 0) && (value3 % 3 != 0) && (value3 % 7 != 0)) {
+if ((value3 % i == 0) && (value3 % 2 == 1) + "\t" +
+    + && (value3 % 5 != 0) && (value3 % 3 != 0) && (value3 % 7 != 0)) {
 result += value3;
 }
 value3++;
