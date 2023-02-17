@@ -18,61 +18,53 @@ return false;
 }
 
 uint64_t nPrime(uint64_t n) {
-int value = 11;
-int count = 0;
-int result = 0;
+int value2 = 11;
+int count2 = 0;
+int result2 = 0;
 switch (n) {
 case (1):
-value = 2;
-return value;
+result2 = 2;
 break;
 case (2):
-value = 3;
-return value;
+result2 = 3;
 break;
 case (3):
-value = 5;
-return value;
+result2 = 5;
 break;
 case (4):
-value = 7;
-return value;
+result2 = 7;
 break;
 }
 if (n > 4) {
 for (int i = 11; i <= 100000; i++) {
-if ((value % i == 0) && (value % 2 == 1)
-&& (value % 5 != 0) && (value % 3 != 0) && (value % 7 != 0)) {
-count++;
-if (count == n) {
-result = value;
+if ((value2 % i == 0) && (value2 % 2 == 1)
+&& (value2 % 5 != 0) && (value2 % 3 != 0) && (value2 % 7 != 0)) {
+count2++;
+if (count2 == n) {
+result2 = value2;
 }
 }
-value++;
+value2++;
 }
 }
-return result;
+return result2;
 }
 
 uint64_t nextPrime(uint64_t value) {
 int count3 = 0;
-int result = 0;
+int result3 = 0;
 switch (value) {
 case (2):
-value = 3;
-return value;
+result3 = 3;
 break;
 case (3):
-value = 5;
-return value;
+result3 = 5;
 break;
 case (5):
-value = 7;
-return value;
+result3 = 7;
 break;
 case (7):
-value = 11;
-return value;
+result3 = 11;
 break;
 }
 if (value >= 11) {
@@ -81,42 +73,36 @@ if ((value % i == 0) && (value % 2 == 1)
 && (value % 5 != 0) && (value % 3 != 0) && (value % 7 != 0)) {
 count3++;
 if (count3 == 2) {
-result = value;
+result3 = value;
 }
 }
 value++;
 }
 }
-return result;
+return result3;
 }
 
 uint64_t sumPrime(uint64_t hbound) {
 int sum = 0;
-int result = 0;
-int value3 = 11;
+int value4 = 11;
 if (hbound <= 11 && hbound >= 7) {
 sum = 17;
-return sum;
 } else if (hbound >= 5 && hbound <= 7) {
 sum = 10;
-return sum;
 } else if (hbound >= 3 && hbound <= 5) {
 sum = 5;
-return sum;
 } else if (hbound <= 3)  {
 sum = 2;
-return sum;
 }
 if (hbound > 11) {
 sum = 17;
-for (int i = value3; i < hbound; i++) {
-if ((value3 % i == 0) && (value3 % 2 == 1)
-&& (value3 % 5 != 0) && (value3 % 3 != 0) && (value3 % 7 != 0)) {
-sum += value3;
+for (int i = value4; i < hbound; i++) {
+if ((value4 % i == 0) && (value4 % 2 == 1)
+&& (value4 % 5 != 0) && (value4 % 3 != 0) && (value4 % 7 != 0)) {
+sum += value4;
 }
-value3++;
+value4++;
 }
-result = sum;
 }
-return result;
+return sum;
 }
