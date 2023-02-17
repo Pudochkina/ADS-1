@@ -40,7 +40,7 @@ for (int i = 11; i <= 10000000; i++) {
 if ((value2 % i == 0) && (value2 % 2 == 1)
 && (value2 % 5 != 0) && (value2 % 3 != 0) && (value2 % 7 != 0)) {
 count2++;
-if (count2 == n) {
+if (count2 == (n-4)) {
 result2 = value2;
 }
 }
