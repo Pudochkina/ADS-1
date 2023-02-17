@@ -17,7 +17,7 @@ return false;
 }
 }
 
-uint64_t nPrime(uint64_t n) { 
+uint64_t nPrime(uint64_t n) {
 int value = 11;
 int count = 0;
 switch (n) {
