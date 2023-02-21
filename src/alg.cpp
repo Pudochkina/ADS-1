@@ -1,7 +1,7 @@
 // Copyright 2022 NNTU-CS
 #include <cstdint>
-#include <math.h>
 #include "alg.h"
+#include <math.h>
 
 
 bool checkPrime(uint64_t value) {
@@ -19,7 +19,7 @@ return false;
 }
 
 uint64_t nPrime(uint64_t n) {
-int result2 = 0;  
+int result2 = 0;
 int count = 0;
 int porNum = 0;
 for (int value = 2; value <= 10000000; value++) {
@@ -71,8 +71,8 @@ return result3;
 uint64_t sumPrime(uint64_t hbound) {
 int count = 0;
 int porNum = 0;
-long long sum = 0;
-for (long long value = 2; value < hbound; value++) {
+int16 sum = 0;
+for (int16 value = 2; value < hbound; value++) {
 int provNum = sqrt(value);
 for (int i = provNum; i > 1; i--) {
 if (value % i != 0) {
