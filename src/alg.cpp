@@ -71,8 +71,8 @@ return result3;
 uint64_t sumPrime(uint64_t hbound) {
 int count = 0;
 int porNum = 0;
-int16 sum = 0;
-for (int16 value = 2; value < hbound; value++) {
+int16_t sum = 0;
+for (int16_t value = 2; value < hbound; value++) {
 int provNum = sqrt(value);
 for (int i = provNum; i > 1; i--) {
 if (value % i != 0) {
